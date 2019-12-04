@@ -38,10 +38,10 @@ Basic djangorestframework with Create, Retrive, Update and Delete (CRUD) api and
 7. Register to admin site "admin.site.register(Customer)"
 
 8. On the project setting file add the followings
-# DEFAULT_PERMISSION_CLASSES  and DEFAULT_AUTHENTICATION_CLASSES area added to the application
-# through setting for all end points.
+ DEFAULT_PERMISSION_CLASSES  and DEFAULT_AUTHENTICATION_CLASSES area added to the application
+ through setting for all end points.
 REST_FRAMEWORK = {
-    #'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
+    'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
     'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAuthenticated',),
     'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)
 }
