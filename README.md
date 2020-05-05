@@ -10,7 +10,7 @@ pip install django-serializer
 pip install djangorestframework_simplejwt
 pip install request
 
-
+// Test
 Commands to run during development:
 
 dango-admin startproject pythonrest
